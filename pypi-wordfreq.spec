@@ -4,7 +4,7 @@
 #
 Name     : pypi-wordfreq
 Version  : 3.0.1
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/b6/cb/1ec9f38dd8ba501cae663b25272e7f20ebaa7f59dd02097b10e4db17c6dc/wordfreq-3.0.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b6/cb/1ec9f38dd8ba501cae663b25272e7f20ebaa7f59dd02097b10e4db17c6dc/wordfreq-3.0.1.tar.gz
 Summary  : Look up the frequencies of words in many languages, based on many sources of data.
@@ -54,7 +54,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1655397192
+export SOURCE_DATE_EPOCH=1656361400
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -90,7 +90,7 @@ export FCFLAGS="$FCFLAGS -m64 -march=x86-64-v3 "
 export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3 "
 pip install --root=%{buildroot}-v3 --no-deps --ignore-installed dist/*.whl
 popd
-/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot}/usr/share/clear/optimized-elf/ %{buildroot}/usr/share/clear/filemap/filemap-%{name}
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
