@@ -4,7 +4,7 @@
 #
 Name     : pypi-wordfreq
 Version  : 3.0.2
-Release  : 6
+Release  : 7
 URL      : https://files.pythonhosted.org/packages/44/68/a01766c34df06db339dbc3e50c6f436b91790ca66a049e771064bcc5e346/wordfreq-3.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/44/68/a01766c34df06db339dbc3e50c6f436b91790ca66a049e771064bcc5e346/wordfreq-3.0.2.tar.gz
 Summary  : Look up the frequencies of words in many languages, based on many sources of data.
