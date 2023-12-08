@@ -7,7 +7,7 @@
 #
 Name     : pypi-wordfreq
 Version  : 3.1.1
-Release  : 13
+Release  : 14
 URL      : https://files.pythonhosted.org/packages/4c/cd/9581ff0ea2c581012d0caae4bba024f3ff6b46e030a55ddec1ce545e2caf/wordfreq-3.1.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/4c/cd/9581ff0ea2c581012d0caae4bba024f3ff6b46e030a55ddec1ce545e2caf/wordfreq-3.1.1.tar.gz
 Summary  : Look up the frequencies of words in many languages, based on many sources of data.
@@ -47,6 +47,12 @@ python components for the pypi-wordfreq package.
 Summary: python3 components for the pypi-wordfreq package.
 Group: Default
 Requires: python3-core
+Provides: pypi(wordfreq)
+Requires: pypi(ftfy)
+Requires: pypi(langcodes)
+Requires: pypi(locate)
+Requires: pypi(msgpack)
+Requires: pypi(regex)
 
 %description python3
 python3 components for the pypi-wordfreq package.
